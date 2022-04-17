@@ -106,13 +106,18 @@ header {
   .navbar-brand {
     width: 14rem;
   }
-  .navbar-nav {
+  .navbar-nav,.dropdown-menu {
+    border: none;
+    min-width: 12rem;
     li {
       margin: 0rem 0.5rem;
       a {
         font-family: Cairo_Bold;
       }
     }
+  }
+  .dropdown-menu[data-bs-popper] {
+    left: -65px;
   }
   .navbar-light .navbar-toggler-icon {
     background-image: url(../images/menu.png);
@@ -121,6 +126,9 @@ header {
   }
   .navbar-light .navbar-toggler {
     border: none;
+  }
+  .offcanvas-start {
+    width: 23rem;
   }
 }
 
@@ -507,7 +515,7 @@ header {
 
 
 // NEXT PAGE 
-.layout__ {
+.layout__ , header {
   
   .nav-pills {
     width: 22rem;
@@ -638,36 +646,7 @@ header {
   }
 
 
-  // FIXES 
-  .dropy {
-    position: relative;
-    width: 100%;
-    height: 10px;
-    margin-bottom: 2rem;
-    right: 0%;
-    background-color: red;
-    .navbar-collapse {
-      position: absolute;
-      top: 4rem;
-      z-index: 999;
-    }
-  }
-  .layout__ {
-    .navbar-light .navbar-toggler-icon {
-      background-image: url(../images/dashboard.png);
-      width: 2.5em;
-      height: 2.5em;
-      box-shadow: rgba(149, 157, 165, 0.728) 0px 8px 24px;
-      background-color: none;
-    }
-    .wrp_drop {
-      flex-wrap: wrap;
-    }
-    .end__drop {
-      justify-content: flex-end;
-      padding: 0;
-    }
-  }
+
 }
 @include media__max(767){
   .hero {
@@ -697,6 +676,7 @@ header {
   }
   .template__card {
     margin-bottom: 10px;
+    width: 90%;
   }
 }
 @include media__max(500){
