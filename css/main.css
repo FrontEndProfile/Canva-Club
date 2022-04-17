@@ -442,10 +442,7 @@ header {
 
 .layout__ .nav-pills {
   width: 22rem;
-  margin-left: 1.5%;
   background: white;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 5rem 1rem; }
   .layout__ .nav-pills .nav-link {
     color: #404040;
@@ -539,7 +536,33 @@ header {
     height: auto !important; }
   .big_02 {
     height: auto !important;
-    display: none; } }
+    display: none; }
+  .dropy {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    margin-bottom: 2rem;
+    right: 0%;
+    background-color: red; }
+    .dropy .navbar-collapse {
+      position: absolute;
+      top: 4rem;
+      z-index: 999; }
+  .layout__ .navbar-light .navbar-toggler-icon {
+    background-image: url(../images/dashboard.png);
+    width: 2.5em;
+    height: 2.5em;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.728) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.728) 0px 8px 24px;
+    background-color: none; }
+  .layout__ .wrp_drop {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .layout__ .end__drop {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0; } }
 
 @media (max-width: 767px) {
   .hero {

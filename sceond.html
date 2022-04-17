@@ -72,18 +72,22 @@
 
 
 
-    <section class="py-5 layout__">
+    <section class=" layout__">
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <div class="d-flex align-items-start">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#drp" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="d-flex align-items-start wrp_drop light__bg pt-4">
+                      <!-- ===========  -->
+                      <nav class="navbar dropy navbar-expand-lg navbar-light bg-transparent pt-0">
+                        <div class="container-fluid end__drop">
+                          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
-                        </button>
+                          </button>
+                          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-
-                        <div class="navbar-collapse" id="drp">
-                            <div class="nav flex-column nav-pills me-3 " id="v-pills-tab"  role="tablist" aria-orientation="vertical">
+                              <div class="nav flex-column nav-pills " id="v-pills-tab"  role="tablist" aria-orientation="vertical">
                                 <button class="nav-link active bg-transparent" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
                                     <img src="images/icons/icon_m_1.png" alt="sidebar">
                                     Home
@@ -141,9 +145,14 @@
                                     <img src="images/icons/icon_m_4.png" alt="sidebar">
                                     Home
                                 </button>
-                            </div>
+                             </div>
+
+                            </ul>
+                          </div>
                         </div>
-                        <div class="tab-content " id="v-pills-tabContent">
+                      </nav>
+
+                        <div class="tab-content bg-white" id="v-pills-tabContent">
                             <div class="tab-pane fade show active bg-white" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                 <!-- CLONE A TO B  -->
                                 <section class="template">
