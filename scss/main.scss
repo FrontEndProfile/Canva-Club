@@ -10,6 +10,7 @@ html {
 $font__base : 1.6rem;
 $font__14 : 1.4rem;
 $font__16 : 1.6rem;
+$font__40 : 4rem;
 $font__lg : 5.5rem;
 
 
@@ -17,19 +18,24 @@ $font__lg : 5.5rem;
 .font__base { font-size: $font__base;}
 .font__14 { font-size: $font__14;}
 .font__16 { font-size: $font__16;}
+.font__40 { font-size: $font__40;}
 .font__lg { font-size: $font__lg;}
 
 
 $soft__black : #404040;
 $purple : #7245e5;
 $light : #f4f4f4;
+$soft__red : #f9595f;
 $dark__gray : #3f3f3f;
+$light__gray : #6f737c;
 
 .soft__black_bg { background: $soft__black;}
 .light__bg { background: $light;}
 .soft__black { color: $soft__black;}
+.soft__red { color: $soft__red;}
 .purple__text { color: $purple !important;}
 .gray__text { color: $dark__gray;}
+.light__gray { color: $light__gray !important;}
 
 textarea:hover, 
 input:hover, 
@@ -48,7 +54,19 @@ label:focus,
     -webkit-appearance:none;
     box-shadow: none !important;
 }
+.weight__100 { font-weight:100;}
+.weight__200 { font-weight:200;}
+.weight__300 { font-weight:300;}
+.weight__400 { font-weight:400;}
+.weight__500 { font-weight:500;}
+.weight__600 { font-weight:600;}
+.weight__700 { font-weight:700;}
+.weight__800 { font-weight:800;}
+.weight__900 { font-weight:900;}
 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$montserrat :'Montserrat', sans-serif;
 @font-face {
   font-family: Inter_Medium;
   src: url(../font/Inter-Medium.ttf);
@@ -69,7 +87,12 @@ label:focus,
   font-family: Cairo_Bold;
   src: url(../font/Cairo-Bold.ttf);
 }
-
+.Cairo_Regular { font-family: Cairo_Regular;}
+.Cairo_Bold { font-family: Cairo_Bold;}
+.Cairo_SemiBold { font-family: Cairo_SemiBold;}
+.Inter_Medium { font-family: Inter_Medium;}
+.Inter_Bold { font-family: Inter_Bold;}
+.montserrat { font-family: $montserrat !important;}
 body {
   font-size: 1.6rem;
 }
@@ -105,6 +128,7 @@ header {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   .navbar-brand {
     width: 14rem;
+    margin: 0;
   }
   .navbar-nav,.dropdown-menu {
     border: none;
@@ -128,7 +152,81 @@ header {
     border: none;
   }
   .offcanvas-start {
-    width: 23rem;
+    width: 24rem;
+  }
+  .user__pro {
+    .dropdown-toggle::after {
+      background-image: url(../images/down-arrow.png);
+    }
+    .dropdown-toggle {
+      background-color: transparent !important;
+      border: none;
+    }
+    .dropdown-menu[data-bs-popper] {
+      left: -70%;
+      width: 30rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      padding: 3rem 1.5rem;
+    }
+    .head__user {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+    }
+    .stripe {
+      background: #ecfdf5;
+      padding: 0.8rem 1rem;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #10b99f;
+      border-radius: 0.4rem;
+    }
+    .dropdown-item {
+      background-color: white;
+    }
+    .dropdown-menu {
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .profile__band {
+    position: relative !important;
+    &::before {
+      position: absolute !important;
+      top: 0;
+      right: 0;
+      content: "";
+      width: 2rem;
+      height: 2rem;
+      background-image: url(../images/pro_icone_gold.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .mail__user {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    object-fit: cover;
+  }
+  .mail__info {
+    h6 {
+      font-size: 16px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 70%;
+    }
+    p {
+      font-size: 13px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 85%;
+      font-weight: 400;
+    }
   }
 }
 
@@ -524,14 +622,17 @@ header {
     // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 5rem 1rem;
     // border: 1.5rem solid #eeeeee;
+    border-radius: 0.5rem;
     .nav-link {
       color: $soft__black;
       font-family: Inter_Medium;
       text-align: start;
       background: transparent !important;
       font-size: $font__14;
+      margin-bottom: 2px;
       > img {
         width: 3.7rem;
+        margin-right: 4px;
       }
       .drop {
         background-color: transparent;
@@ -539,6 +640,7 @@ header {
           font-size: $font__14;
           position: relative;
           padding-left: 4rem;
+          color: $purple;
           &::after {
             display: inline-block;
             margin-left: .255em;
@@ -550,7 +652,7 @@ header {
             left: 0;
             width: 2.8rem;
             height: 2.8rem;
-            background-color: #3f3f3f;
+            background-color: $purple;
             border-radius: 50%;
             background-image: url(../images/dropdown_white.png);
             background-repeat: no-repeat;
@@ -559,6 +661,11 @@ header {
           }
         }
       }
+    }
+  }
+  .likes {
+    img {
+      width: 2.5rem;
     }
   }
 }
@@ -604,6 +711,14 @@ header {
   .template__layout {
     grid-template-columns: repeat(5, 19.38%);
   }
+  .layout__ {
+    .font__40 {
+      font-size: 3.2rem;
+    }
+    .likes  a {
+      font-size: 1.5rem;
+    }
+  }
 }
 @include media__max(991){
   .video-play-button::after {
@@ -644,8 +759,17 @@ header {
     height: auto !important;
     display: none;
   }
-
-
+  .wrp_drop  {
+    background-color: transparent;
+  }
+  .layout__ {
+    .feed_info {
+      font-size: 14px;
+      span {
+        margin-right: 2px;
+      }
+    }
+  }
 
 }
 @include media__max(767){
@@ -669,14 +793,47 @@ header {
     // grid-template-columns: 33% 33% 33%;
     // grid-template-rows: repeat(30 , auto);
   }
+  .layout__ {
+    .font__40 {
+      font-size: 2.8rem;
+    }
+    .menu__drop {
+      margin: 1rem auto;
+      justify-content: center !important;
+    }
+  }
 }
 @include media__max(540){
+  header {
+    .navbar-brand {
+      width: 10rem;
+    }
+    .navbar  {
+      padding: 1.5rem 0rem !important;
+    }
+  }
   .big_03 {
     display: none;
   }
   .template__card {
     margin-bottom: 10px;
     width: 90%;
+  }
+  .layout__ {
+    .font__40 {
+      font-size: 2.2rem;
+    }
+    .feed_info {
+      font-size: 3vw;
+      span {
+        margin-right: 0px;
+      }
+    }
+    .likes  {
+      img {
+        width: 2rem;
+      }
+    }
   }
 }
 @include media__max(500){
