@@ -554,6 +554,17 @@ header {
   height: 3.5rem;
   z-index: 2; }
 
+.carousel-inner .ratio {
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: #7245e5ae !important;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(99, 203, 252, 0.3); }
+
 .lasty .see__more a {
   background-color: #7245e5;
   padding: 0.8rem 4.5rem;
