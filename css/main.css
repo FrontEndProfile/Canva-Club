@@ -220,6 +220,15 @@ header {
     text-overflow: ellipsis;
     width: 85%;
     font-weight: 400; }
+  header .profile__mobo_img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: auto; }
+  header .profile__mobo_username {
+    font-size: 100%; }
 
 .search__header .form-control {
   width: 18vw !important;
@@ -474,6 +483,12 @@ header {
       background-repeat: no-repeat;
       margin-left: 0.5rem; }
 
+.down-chevron::after {
+  display: none; }
+
+.side__line {
+  width: 3rem; }
+
 .template__layout {
   display: -ms-grid;
   display: grid;
@@ -575,7 +590,7 @@ header {
 .layout__ .nav-pills, header .nav-pills {
   width: 22rem;
   background: white;
-  padding: 5rem 1rem;
+  padding: 0rem 1rem;
   border-radius: 0.5rem; }
   .layout__ .nav-pills .nav-link, header .nav-pills .nav-link {
     color: #404040;
@@ -614,6 +629,76 @@ header {
 
 .layout__ .likes img, header .likes img {
   width: 2.5rem; }
+
+.frame__page {
+  padding: 2rem 4rem; }
+
+.frame__video {
+  width: 80rem;
+  height: 40rem;
+  background-color: #3c80db;
+  background-image: linear-gradient(160deg, #3c80db 50%, #6751e4 88%);
+  border-radius: 1.2rem !important; }
+  .frame__video .frames {
+    height: 100%; }
+    .frame__video .frames .item {
+      background: transparent; }
+      .frame__video .frames .item iframe {
+        width: 80rem;
+        height: 40rem;
+        border-radius: 1.2rem !important; }
+  .frame__video .slick-next, .frame__video .slick-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 120%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: 0;
+    background: 0 0; }
+  .frame__video .slide-arrow {
+    top: 110%;
+    position: absolute;
+    border: none;
+    padding: 0.6rem 3rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family: Cairo_SemiBold;
+    background-color: #989898;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(9%, #989898), color-stop(54%, #757575));
+    background-image: linear-gradient(180deg, #989898 9%, #757575 54%);
+    color: white; }
+  .frame__video .next-arrow {
+    right: 0;
+    background-color: #3c80db;
+    background-image: linear-gradient(160deg, #3c80db 41%, #6751e4 88%); }
+
+.frame__info {
+  margin-top: 12rem; }
+
+.account__user_img {
+  width: 8rem;
+  height: 8rem; }
+
+.account__user_content p {
+  font-size: 25px;
+  color: #6f737c;
+  line-height: 1; }
+
+.account__user_content a {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500; }
+
+.frame__tag span {
+  color: #7245e5; }
 
 @media (max-width: 1600px) {
   .template__card .template__add {

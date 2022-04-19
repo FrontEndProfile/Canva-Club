@@ -18,7 +18,7 @@ function close_video() {
 };
 
 
-import Lightbox from 'bs5-lightbox';
+// import Lightbox from 'bs5-lightbox';
 
 const options = {
 	keyboard: true,
@@ -30,3 +30,16 @@ document.querySelectorAll('.my-lightbox-toggle').forEach((el) => el.addEventList
 	const lightbox = new Lightbox(el, options);
 	lightbox.show();
 }));
+
+
+
+$(document).ready(function(){
+  $('.frames').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<button class="slide-arrow prev-arrow">« Aula Anterior</button>',
+    nextArrow: '<button class="slide-arrow next-arrow">Próxima Aula » </button>'
+  });
+});

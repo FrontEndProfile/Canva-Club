@@ -228,6 +228,18 @@ header {
       font-weight: 400;
     }
   }
+  // .profile__mobo 
+  .profile__mobo_img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+  }
+  .profile__mobo_username {
+    font-size: 100%;
+
+  }
 }
 
 .search__header {
@@ -503,6 +515,14 @@ header {
     }
   }
 }
+.down-chevron {
+  &::after {
+    display: none;
+  }
+}
+.side__line {
+  width: 3rem;
+}
 
 // ALL CARDS 
 
@@ -631,7 +651,7 @@ border: 1px solid rgba(99, 203, 252, 0.3);
     // margin-left: 1.5%;
     background: white;
     // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 5rem 1rem;
+    padding: 0rem 1rem;
     // border: 1.5rem solid #eeeeee;
     border-radius: 0.5rem;
     .nav-link {
@@ -678,6 +698,92 @@ border: 1px solid rgba(99, 203, 252, 0.3);
     img {
       width: 2.5rem;
     }
+  }
+}
+
+// FIVE PAGE 
+.frame__page {
+  padding: 2rem 4rem;
+}
+.frame__video {
+  width: 80rem;
+  height: 40rem;
+  background-color: #3c80db;
+  background-image: linear-gradient(160deg, #3c80db 50%, #6751e4 88%);
+  border-radius: 1.2rem !important;
+  .frames {
+    height: 100%;
+    .item {
+      background: transparent;
+      iframe {
+        width: 80rem;
+        height: 40rem;
+        border-radius: 1.2rem !important;
+      }
+    }
+  }
+  .slick-next, .slick-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 120%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: 0;
+    background: 0 0;
+  }
+  .slide-arrow {
+    top: 110%;
+    position: absolute;
+    border: none;
+    padding: 0.6rem 3rem;
+    border-radius: 5px;
+    font-size: $font__16;
+    font-family: Cairo_SemiBold;
+    background-color: #989898;
+    background-image: linear-gradient(180deg, #989898 9%, #757575 54%);
+    color: white;
+  }
+  .next-arrow {
+    right: 0;
+    background-color: #3c80db;
+    background-image: linear-gradient(160deg, #3c80db 41%, #6751e4 88%);
+    
+
+  }
+}
+.frame__info {
+  margin-top: 12rem;
+}
+.account__user {
+  &_img {
+    width: 8rem;
+    height: 8rem;
+  }
+  &_content {
+    p {
+      font-size: 25px;
+      color: $light__gray;
+      line-height: 1;
+    }
+    a {
+      font-size: 13px;
+      font-family: $montserrat;
+      font-weight: 500;
+    }
+  }
+}
+.frame__tag {
+  span {
+    color: $purple;
   }
 }
 
