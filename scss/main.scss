@@ -836,6 +836,11 @@ border: 1px solid rgba(99, 203, 252, 0.3);
       font-size: 1.5rem;
     }
   }
+  .frame__video,
+  .frame__video .frames .item iframe{
+    width: 60rem;
+    height: 30rem;
+  }
 }
 @include media__max(991){
   .video-play-button::after {
@@ -919,6 +924,10 @@ border: 1px solid rgba(99, 203, 252, 0.3);
       justify-content: center !important;
     }
   }
+  .frame__video, .frame__video .frames .item iframe {
+    width: 85vw;
+    height: 42vw;
+  }
 }
 @include media__max(540){
   header {
@@ -965,6 +974,22 @@ border: 1px solid rgba(99, 203, 252, 0.3);
   }
   .hero__tittle {
     font-size: 5.3vw;
+  }
+  .slide-arrow  {
+    background: transparent !important;
+    img {
+      width: 3rem;
+    }
+  }
+  .account__user_content p {
+    font-size: 20px;
+    a {
+      font-size: 11px;
+    }
+  }
+  .account__user_img {
+    width: 6rem;
+    height: 6rem;
   }
 }
 

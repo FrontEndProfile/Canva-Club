@@ -727,7 +727,11 @@ header {
   .layout__ .font__40 {
     font-size: 3.2rem; }
   .layout__ .likes a {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .frame__video,
+  .frame__video .frames .item iframe {
+    width: 60rem;
+    height: 30rem; } }
 
 @media (max-width: 991px) {
   .video-play-button::after {
@@ -791,7 +795,10 @@ header {
     margin: 1rem auto;
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
-            justify-content: center !important; } }
+            justify-content: center !important; }
+  .frame__video, .frame__video .frames .item iframe {
+    width: 85vw;
+    height: 42vw; } }
 
 @media (max-width: 540px) {
   header .navbar-brand {
@@ -821,5 +828,16 @@ header {
         -ms-flex-pack: center;
             justify-content: center; }
   .hero__tittle {
-    font-size: 5.3vw; } }
+    font-size: 5.3vw; }
+  .slide-arrow {
+    background: transparent !important; }
+    .slide-arrow img {
+      width: 3rem; }
+  .account__user_content p {
+    font-size: 20px; }
+    .account__user_content p a {
+      font-size: 11px; }
+  .account__user_img {
+    width: 6rem;
+    height: 6rem; } }
 /*# sourceMappingURL=main.css.map */

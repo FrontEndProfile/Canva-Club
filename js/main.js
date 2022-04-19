@@ -40,6 +40,16 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: true,
     prevArrow: '<button class="slide-arrow prev-arrow">« Aula Anterior</button>',
-    nextArrow: '<button class="slide-arrow next-arrow">Próxima Aula » </button>'
+    nextArrow: '<button class="slide-arrow next-arrow">Próxima Aula » </button>',
+    responsive: [
+      {
+        breakpoint: 500,
+        settings: {
+         prevArrow: '<button class="slide-arrow prev-arrow"><img src="images/prev.png" alt="next"></button>',
+         nextArrow: '<button class="slide-arrow next-arrow"><img src="images/next.png" alt="back"></button>',
+
+        }
+      }
+    ]
   });
 });
