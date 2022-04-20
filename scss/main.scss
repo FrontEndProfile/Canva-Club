@@ -4,12 +4,15 @@ html {
 // * {
 //   transition: 0.1s all;
 // }
-
+a {
+  text-decoration: none;
+}
 
 
 $font__base : 1.6rem;
 $font__14 : 1.4rem;
 $font__16 : 1.6rem;
+$font__22 : 2.2rem;
 $font__40 : 4rem;
 $font__lg : 5.5rem;
 
@@ -18,6 +21,7 @@ $font__lg : 5.5rem;
 .font__base { font-size: $font__base;}
 .font__14 { font-size: $font__14;}
 .font__16 { font-size: $font__16;}
+.font__22 { font-size: $font__22;}
 .font__40 { font-size: $font__40;}
 .font__lg { font-size: $font__lg;}
 
@@ -26,6 +30,8 @@ $soft__black : #404040;
 $purple : #7245e5;
 $light : #f4f4f4;
 $soft__red : #f9595f;
+$soft__pink : #fecaca;
+$soft__green : #4ad395;
 $dark__gray : #3f3f3f;
 $light__gray : #6f737c;
 
@@ -560,7 +566,7 @@ header {
       width: 100%;
       height: 100%;
       background-color: #0000004b;
-      padding: 45% 2rem 1rem 2rem;
+      padding: 45% 1rem 1rem 1rem;
       z-index: 1;
       &_zoom {
         width: 2.5rem;
@@ -787,6 +793,193 @@ border: 1px solid rgba(99, 203, 252, 0.3);
   }
 }
 
+
+.dropdown-menu {
+  padding-bottom: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .dropdown-item {
+    font-size: $font__16;
+    font-family: Cairo_SemiBold;
+    padding: 0.3rem 2rem;
+    background-color: white;
+    border-radius: 3px;
+    color: $light__gray;
+    transition: 0.3s all;
+    width: 100%;
+    &:hover {
+      transition: 0.3s all;
+    }
+  }
+}
+.dropdown__btn__soft {
+  border-radius: 5px !important;
+  border: none !important;
+}
+.dropdown__arrows {
+  width: 100%;
+  .dropdown-divider {
+    height: 0.5px;
+    background-color: $light__gray;
+    width: fit-content;
+    padding: 0% 45%;
+  }
+  .dropdown-item {
+    position: relative;
+    width: 100%;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 6px;
+      content: "»";
+
+    }
+  }
+  .dropdown-item {
+    font-size: $font__16;
+    font-family: Cairo_SemiBold;
+    padding: 0.3rem 2rem;
+    background-color: white;
+    border-radius: 3px;
+    color: $light__gray;
+    transition: 0.3s all;
+    &:hover {
+      background-color: #a07cfb;
+      color: white;
+      transition: 0.3s all;
+    }
+  }
+}
+.profile__mobo {
+  .dropdown-toggle {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+
+// FOUR PAGE 
+.blog {
+  &__layout {
+    padding: 1rem 5rem;
+  }
+  &__images {
+    img {
+      border-radius: 1rem;
+      width: 100%;
+      object-fit: cover;
+    }
+    &__btns {
+      a {
+        font-size: 1.6rem;
+        color: $light__gray;
+        img {
+          width: 3rem;
+        }
+        margin: 2rem 3rem;
+        text-decoration: none;
+      }
+      div {
+        height: 3rem;
+        width: 1px;
+        background-color: #6f737c9b;
+      }
+    }
+  }
+  &__content {
+    h1 {
+      font-size: 3.8rem;
+    }
+  }
+  &__message {
+    background: $soft__pink;
+    padding: 2.5rem 3rem;
+    border-radius: 1rem;
+    font-size: $font__16;
+  }
+}
+.edit__canva {
+  background-color: #3c80db;
+  background-image: linear-gradient(160deg, #3c80db 41%, #6751e4 88%);
+  padding: 1rem 3rem;
+  color: white !important;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  display: block;
+  text-align: center;
+  font-family: Cairo_SemiBold;
+}
+.premium__bg {
+  background: black !important;
+}
+.legenda {
+  padding: 6rem 0rem;
+  .accordion {
+    &-item {
+      border: none;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      margin-bottom: 6rem;
+    }
+    &-header {
+      border: none !important;
+      outline: none;
+      box-shadow: none;
+    }
+    &-button {
+      font-size: 2.2rem;
+      background-color: white;
+      color: #7b2feb;
+      &::after {
+        margin-left: 2rem;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        background-color: $purple;
+        padding: 1.3rem;
+        background-position: center;
+        border-radius: 50%;
+
+      }
+      svg {
+        width: 20px;
+      }
+    }
+    &-body {
+      border: 0.3mm solid $purple;
+      border-radius: 1rem;
+      padding: 5rem;
+      box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 15px 0px;
+      font-size: 1.8rem;
+      font-family: Cairo_SemiBold;
+    }
+    &-tags {
+      font-size: 1.8rem;
+      color: #7b2feb;
+    }
+    &-copy a {
+      background: $soft__green;
+      padding: 1rem 4.5rem;
+      border-radius: 0.6rem;
+      font-size: 1.8rem;
+      color: $soft__black;
+      font-family: Cairo_SemiBold;
+    }
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+}
+
+.blog__page {
+  .template__card .template__add {
+    padding: 35% 1em 1rem 1rem;
+  }
+
+  .template__layout {
+    grid-template-columns: repeat(5, 19.4%);
+  }
+}
 
 
 
