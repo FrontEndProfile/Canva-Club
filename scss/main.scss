@@ -628,10 +628,7 @@ header {
 
 }
 .carousel-inner .ratio  {
-  // background-color: rgba(216, 200, 255, 0.513) !important;
-  /* From https://css.glass */
-/* From https://css.glass */
-background: #7245e5ae !important;
+background: #000000ba !important;
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(7.7px);
@@ -1064,6 +1061,31 @@ border: 1px solid rgba(99, 203, 252, 0.3);
   width: 30vw;
 }
 
+.profile__list {
+  .dropdown-item {
+    background: white !important;
+    font-family: Inter_Medium !important;
+    text-align: start;
+    font-size: 1.4rem;
+    margin-bottom: 2px;
+  }
+  .dropdown-divider {
+    background-color: rgba(196, 196, 196, 0.78);
+  }
+}
+.profile__mobo_username {
+  padding-left: 1rem !important;
+  &::after {
+    left: 95% !important;
+    background: transparent !important;
+    background-image: url(../images/down-arrow-purple.png) !important;
+    background-size: 60% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    margin-left: 0 !important;
+  }
+}
+
 // ALL MEDIA 
 @include media__max(1600){
   .template__card .template__add {
@@ -1277,6 +1299,9 @@ border: 1px solid rgba(99, 203, 252, 0.3);
   .blog__page .template__layout {
     grid-template-columns: repeat(3,auto);
   }
+  .carousel-inner .ratio {
+    border-radius: 6px;
+  }
 }
 @include media__max(540){
   header {
@@ -1365,7 +1390,7 @@ border: 1px solid rgba(99, 203, 252, 0.3);
     margin: 1.5rem 0rem !important;
   }
   .legenda .accordion-item {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   .blog__images__btns a {
     margin: 2rem 0.8rem;
@@ -1376,14 +1401,33 @@ border: 1px solid rgba(99, 203, 252, 0.3);
   }
   .blog__page .template__layout {
     grid-template-columns: repeat(1,auto);
-    justify-content: center;
+    // justify-content: center;
 
+  }
+  .feed__card {
+    width: 100% !important;
+    margin-right: 0;
+  }
+  .feed__banner {
+    height: 12.5rem;
+  }
+  .feed__img {
+    width: 8rem;
+    height: 8rem;
+    margin-top: -4rem;
   }
 }
 @include media__max(450){
   .template__layout {
     grid-template-columns: repeat(1, auto);
-    justify-content: center;
+    // justify-content: center;
+  }
+  .template__card {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .legenda .accordion-item {
+    margin-bottom: 1rem;
   }
 }
 
