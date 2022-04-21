@@ -1,0 +1,1517 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>THREE</title>
+  </head>
+  <body>
+    <!-- HEADER  -->
+    <header class="bg-white">
+      <nav class="navbar navbar-expand-xl navbar-light bg-white py-5 wrapper">
+        <div class="container-fluid  px-0">
+          <a class="btn shadow-none bg-transparent d-block d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <img class="" width="30" src="images/menu.png" alt="menu">
+          </a>
+          <a class="navbar-brand" href="index.html">
+            <img class="w-100" src="images/logo.png" alt="logo">
+          </a>
+          <form class="d-flex justify-content-center search__header d-lg-block d-none">
+            <div class="input-group">
+              <button class="btn dropdown-toggle font__14 soft__black" type="button" data-bs-toggle="dropdown" aria-expanded="false">Todos os itens</button>
+              <ul class="dropdown-menu dropdown__arrows start-0">
+                <li><a class="dropdown-item" href="#">Mais recentes</a></li>
+                <li><hr class="dropdown-divider mx-3 my-2"></li>
+                <li><a class="dropdown-item" href="#">Mais antigas</a></li>
+                <li><hr class="dropdown-divider mx-3 my-2"></li>
+                <li><a class="dropdown-item" href="#">Alfabética</a></li>
+              </ul>
+              <input type="text" class="form-control" placeholder="Procurar..." aria-label="Username" aria-describedby="basic-addon1">
+              <a href="#" class="text-decoration-none d-flex" >
+              <span class="input-group-text soft__black_bg" id="basic-addon1">
+                <img class="p-1" src="images/search.png" alt="search">
+              </span>
+              </a>
+            </div>
+          </form>
+
+          <div class="dropdown d-block d-xl-none">
+            <button class="btn down-chevron shadow-none bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="images/down-chevron.png" alt="">
+            </button>
+            <ul class="dropdown-menu shadow py-3 px-2" aria-labelledby="dropdownMenuButton1">
+              <li class="nav-item">
+                <a class="nav-link active font__14 soft__black" aria-current="page" href="#">Licenças</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn__outline purple__text font__14" href="#">Preços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font__14 soft__black" href="#">Categorias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font__14 soft__black" href="#">Academy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font__14 soft__black" href="#">Cadastre-se</a>
+              </li>
+              <!-- USER  -->
+             
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Licenças</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn__outline purple__text" href="#">Preços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categorias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Academy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cadastre-se</a>
+              </li>
+              <!-- USER PROFILE  -->
+              <li class="nav-item dropdown user__pro">
+                <div class="me-4 menu__drop mt-0 ">
+                  <button class="btn bg-transparent dropdown-toggle font__16 soft__black" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="profile__band">
+                    <img class="head__user  img-fluid" src="images/user__pro.jpeg" alt="login">
+                    </span>
+                    <span class="mx-3">Entrar</span>
+                  </button>
+                  <span class="band Cairo_Bold soft__red">
+                    sair
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li class="stripe Inter_Bold">
+                      PREMIUM PLUS
+                    </li>
+                    <li><a class="dropdown-item my-3 d-flex align-items-center" href="#">
+                      <img class="mail__user" src="images/user__pro.jpeg" alt="user">
+                      <div class="mail__info">
+                        <h6 class="soft__black">
+                          George Nascilerty haha
+                        </h6>
+                        <p class="Cairo_SemiBold light__gray mb-0">
+                          George73251@gmail.com
+                        </p>
+                      </div>
+                    </a></li>
+                    <li>
+                      <hr>
+                    </li>
+                    <li><a class="dropdown-item font__16 montserrat weight__500 light__gray" href="#">
+                      <img class="mx-2" src="images/icons/icon_menu_1.png" alt="menu">
+                      Minha conta
+                    </a></li>
+                    <li><a class="dropdown-item font__16 montserrat weight__500 light__gray" href="#">
+                      <img class="mx-2" src="images/icons/icon_menu_2.png" alt="menu">
+                      Downloads/views
+                    </a></li>     
+                    <li><a class="dropdown-item font__16 montserrat weight__500 light__gray" href="#">
+                      <img class="mx-2" src="images/icons/icon_menu_4.png" alt="menu">
+                      Curtidas
+                    </a></li>
+                    <li><a class="dropdown-item font__16 montserrat weight__500 light__gray" href="#">
+                      <img class="mx-2" src="images/icons/icon_menu_5.png" alt="menu">
+                      Seguindo
+                    </a></li>
+                    <li><a class="dropdown-item font__16 montserrat weight__500 light__gray" href="#">
+                      <img class="mx-2" src="images/icons/icon_menu_6.png" alt="menu">
+                      Afiliado
+                    </a></li>
+                    <li><a class="dropdown-item font__16 montserrat weight__500 light__gray" href="#">
+                      <img class="mx-2" src="images/icons/icon_menu_7.png" alt="menu">
+                      Modo escuro
+                    </a></li>
+                    <li><a class="dropdown-item font__16 montserrat weight__500 light__gray" href="#">
+                      <img class="mx-2" src="images/icons/icon_menu_3.png" alt="menu">
+                      Faturas
+                    </a></li>
+                    <li><a class="dropdown-item font__16 montserrat weight__500 light__gray" href="#">
+                      <img class="mx-2" src="images/icons/icon_menu_8.png" alt="menu">
+                      Sair
+                    </a></li>
+
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="offcanvas offcanvas-start d-block d-lg-none overflow-scroll" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+            </div>
+            <div class="offcanvas-body">
+              <nav class="navbar navbar-light bg-transparent pt-0">
+                <div class="container-fluid end__drop">
+                  <div class=" navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <div class="nav flex-column nav-pills " id="v-pills-tab"  role="tablist" aria-orientation="vertical">
+                        <!-- MOBO MENU LINK ALL SIDE BAR CLONE A TO B -->
+                        <!-- PROFILE USER  -->
+                        <div class="profile__mobo">
+                          <a href="#">
+                          <img class="profile__mobo_img mx-3" src="images/user__pro.jpeg" alt="PROFILE">
+                          </a>
+                          <div class="my-4">
+                            <button class="btn dropdown-toggle mx-3 profile__mobo_username Inter_Bold soft__black font__14" type="button" data-bs-toggle="dropdown" aria-expanded="false">Ordem <span><img src="images/down-arrow.png" alt=""></span></button>
+                            <ul class="dropdown-menu shadow-none">
+                              <li><a class="dropdown-item font__16 montserrat weight__500 light__gray px-3" href="#">
+                                <img class="mx-2" src="images/icons/icon_menu_1.png" alt="menu">
+                                Minha conta
+                              </a></li>
+                              <li><hr class="dropdown-divider mx-3 my-2"></li>
+                              <li><a class="dropdown-item font__16 montserrat weight__500 light__gray px-3" href="#">
+                                <img class="mx-2" src="images/icons/icon_menu_2.png" alt="menu">
+                                Minha conta
+                              </a></li>
+                              <li><hr class="dropdown-divider mx-3 my-2"></li>
+                              <li><a class="dropdown-item font__16 montserrat weight__500 light__gray px-3" href="#">
+                                <img class="mx-2" src="images/icons/icon_menu_3.png" alt="menu">
+                                Minha conta
+                              </a></li>
+                              <li><hr class="dropdown-divider mx-3 my-2"></li>
+                              <li><a class="dropdown-item font__16 montserrat weight__500 light__gray px-3" href="#">
+                                <img class="mx-2" src="images/icons/icon_menu_4.png" alt="menu">
+                                Minha conta
+                              </a></li>
+                              <li><hr class="dropdown-divider mx-3 my-2"></li>
+                              <li><a class="dropdown-item font__16 montserrat weight__500 light__gray px-3" href="#">
+                                <img class="mx-2" src="images/icons/icon_menu_5.png" alt="menu">
+                                Minha conta
+                              </a></li>
+                              <li><hr class="dropdown-divider mx-3 my-2"></li>
+                              <li><a class="dropdown-item font__16 montserrat weight__500 light__gray px-3" href="#">
+                                <img class="mx-2" src="images/icons/icon_menu_6.png" alt="menu">
+                                Minha conta
+                              </a></li>
+                              <li><hr class="dropdown-divider mx-3 my-2"></li>
+                              <li><a class="dropdown-item font__16 montserrat weight__500 light__gray px-3" href="#">
+                                <img class="mx-2" src="images/icons/icon_menu_7.png" alt="menu">
+                                Minha conta
+                              </a></li>
+                              <li><hr class="dropdown-divider mx-3 my-2"></li>
+                              <li><a class="dropdown-item font__16 montserrat weight__500 light__gray px-3" href="#">
+                                <img class="mx-2" src="images/icons/icon_menu_8.png" alt="menu">
+                                Minha conta
+                              </a></li>
+                            </ul>
+                          </div>
+                        </div>
+                            <button class="nav-link active bg-transparent" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <img src="images/icons/icon_m_1.png" alt="sidebar">
+                                Home
+                            </button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                <img src="images/icons/icon_m_2.png" alt="sidebar">
+                                Atualizações
+                            </button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                <img src="images/icons/icon_m_3.png" alt="sidebar">
+                                Minha Conta
+                            </button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                <img src="images/icons/icon_m_4.png" alt="sidebar">
+                                Suas artes
+                            </button>
+                            <!-- DROPDOWN LIST LINK  -->
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <div class="drop">
+                                    <a class="btn shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                      Categorias
+                                    </a>
+                                  </div>
+                                  <div class="collapse" id="collapseExample">
+                                    <div class="card border-0 card-body p-0">
+                                        <ul class="m-0 p-0 list-unstyled">
+                                            <li class="my-3">
+                                                <a href="#" class="text-decoration-none nav-link p-0">
+                                                    <img src="images/icons/icon_m_5.png" alt="sidebar">
+                                                    Artes para Feed
+                                                </a>
+                                            </li>
+                                            <li class="my-3">
+                                                <a href="#" class="text-decoration-none nav-link p-0">
+                                                    <img src="images/icons/icon_m_6.png" alt="sidebar">
+                                                    Artes para Story
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                <img src="images/icons/icon_m_7.png" alt="sidebar">
+                                Carrosel
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                <img src="images/icons/icon_m_8.png" alt="sidebar">
+                                Artes animadas
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                <img src="images/icons/icon_m_9.png" alt="sidebar">
+                                Cartões de visitas
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_10.png" alt="sidebar">
+                              Cartões interativos
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_11.png" alt="sidebar">
+                              Convites Interativos
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_12.png" alt="sidebar">
+                              Cardápios
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_13.png" alt="sidebar">
+                              Apresentações
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_14.png" alt="sidebar">
+                              Ebooks
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_15.png" alt="sidebar">
+                              Sites
+                            </button>
+
+                            <!-- DROPDOWN LIST LINK  -->
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <div class="drop">
+                                <a class="btn shadow-none" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                  Elementos gráficos
+                                </a>
+                              </div>
+                              <div class="collapse" id="collapseExample1">
+                                <div class="card border-0 card-body p-0">
+                                    <ul class="m-0 p-0 list-unstyled">
+                                        <li class="my-3">
+                                            <a href="#" class="text-decoration-none nav-link p-0">
+                                                <img src="images/icons/icon_m_16.png" alt="sidebar">
+                                                Artes para Feed
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#" class="text-decoration-none nav-link p-0">
+                                                <img src="images/icons/icon_m_17.png" alt="sidebar">
+                                                Artes para Story
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_16.png" alt="sidebar">
+                              Efeitos
+                            </button>
+                            
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_17.png" alt="sidebar">
+                              Alfaberto 3D
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_18.png" alt="sidebar">
+                              Shapes
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_19.png" alt="sidebar">
+                              Ícones
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_20.png" alt="sidebar">
+                              Overlay
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_21.png" alt="sidebar">
+                              Texturas
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_22.png" alt="sidebar">
+                              Elementos PNG
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_23.png" alt="sidebar">
+                              Emoticons
+                            </button>
+
+                            <button class="nav-link font__14" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <small>Tipografias</small>
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_24.png" alt="sidebar">
+                              Canva Fontes
+                            </button>
+
+
+                            <!-- DROPDOWN LIST LINK  -->
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <div class="drop">
+                                <a class="btn shadow-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                  Conhecimento
+                                </a>
+                              </div>
+                              <div class="collapse" id="collapseExample2">
+                                <div class="card border-0 card-body p-0">
+                                    <ul class="m-0 p-0 list-unstyled">
+                                        <li class="my-3">
+                                            <a href="#" class="text-decoration-none nav-link p-0">
+                                                <img src="images/icons/icon_m_4.png" alt="sidebar">
+                                                Artes para Feed
+                                            </a>
+                                        </li>
+                                        <li class="my-3">
+                                            <a href="#" class="text-decoration-none nav-link p-0">
+                                                <img src="images/icons/icon_m_4.png" alt="sidebar">
+                                                Artes para Story
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_27.png" alt="sidebar">
+                              Conheçendo o Club
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_25.png" alt="sidebar">
+                              Curso Canva
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_26.png" alt="sidebar">
+                              Dicas de Internet
+                            </button>
+
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <img src="images/icons/icon_m_26.png" alt="sidebar">
+                              Editando Artes
+                            </button>
+                      </div>
+
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- HEADER END  -->
+
+    <section class="blog__page layout__">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col bg-transparent px-0">
+                    <div class="d-flex h-100 wrp_drop light__bg pt-4">
+                  <div class="bg-white h-100 side__line d-none d-lg-block"></div>
+
+                      <!-- ===========  -->
+                      <nav class="navbar d-none d-lg-block navbar-expand-lg navbar-light bg-transparent pt-0">
+                        <div class="container-fluid end__drop">
+                          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav me-auto mb-lg-0">
+
+                              <div class="nav flex-column nav-pills mb-4" id="v-pills-tab"  role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active bg-transparent" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                    <img src="images/icons/icon_m_1.png" alt="sidebar">
+                                    Home
+                                </button>
+                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                    <img src="images/icons/icon_m_2.png" alt="sidebar">
+                                    Atualizações
+                                </button>
+                                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                    <img src="images/icons/icon_m_3.png" alt="sidebar">
+                                    Minha Conta
+                                </button>
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                    <img src="images/icons/icon_m_4.png" alt="sidebar">
+                                    Suas artes
+                                </button>
+                                <!-- DROPDOWN LIST LINK  -->
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                      <div class="drop">
+                                        <a class="btn shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                          Categorias
+                                        </a>
+                                      </div>
+                                      <div class="collapse" id="collapseExample">
+                                        <div class="card border-0 card-body p-0">
+                                            <ul class="m-0 p-0 list-unstyled">
+                                                <li class="my-3">
+                                                    <a href="#" class="text-decoration-none nav-link p-0">
+                                                        <img src="images/icons/icon_m_5.png" alt="sidebar">
+                                                        Artes para Feed
+                                                    </a>
+                                                </li>
+                                                <li class="my-3">
+                                                    <a href="#" class="text-decoration-none nav-link p-0">
+                                                        <img src="images/icons/icon_m_6.png" alt="sidebar">
+                                                        Artes para Story
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                </button>
+    
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                    <img src="images/icons/icon_m_7.png" alt="sidebar">
+                                    Carrosel
+                                </button>
+    
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                    <img src="images/icons/icon_m_8.png" alt="sidebar">
+                                    Artes animadas
+                                </button>
+    
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                    <img src="images/icons/icon_m_9.png" alt="sidebar">
+                                    Cartões de visitas
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_10.png" alt="sidebar">
+                                  Cartões interativos
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_11.png" alt="sidebar">
+                                  Convites Interativos
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_12.png" alt="sidebar">
+                                  Cardápios
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_13.png" alt="sidebar">
+                                  Apresentações
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_14.png" alt="sidebar">
+                                  Ebooks
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_15.png" alt="sidebar">
+                                  Sites
+                                </button>
+
+                                <!-- DROPDOWN LIST LINK  -->
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <div class="drop">
+                                    <a class="btn shadow-none" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                      Elementos gráficos
+                                    </a>
+                                  </div>
+                                  <div class="collapse" id="collapseExample1">
+                                    <div class="card border-0 card-body p-0">
+                                        <ul class="m-0 p-0 list-unstyled">
+                                            <li class="my-3">
+                                                <a href="#" class="text-decoration-none nav-link p-0">
+                                                    <img src="images/icons/icon_m_16.png" alt="sidebar">
+                                                    Artes para Feed
+                                                </a>
+                                            </li>
+                                            <li class="my-3">
+                                                <a href="#" class="text-decoration-none nav-link p-0">
+                                                    <img src="images/icons/icon_m_17.png" alt="sidebar">
+                                                    Artes para Story
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_16.png" alt="sidebar">
+                                  Efeitos
+                                </button>
+                                
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_17.png" alt="sidebar">
+                                  Alfaberto 3D
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_18.png" alt="sidebar">
+                                  Shapes
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_19.png" alt="sidebar">
+                                  Ícones
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_20.png" alt="sidebar">
+                                  Overlay
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_21.png" alt="sidebar">
+                                  Texturas
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_22.png" alt="sidebar">
+                                  Elementos PNG
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_23.png" alt="sidebar">
+                                  Emoticons
+                                </button>
+
+                                <button class="nav-link font__14" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <small>Tipografias</small>
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_24.png" alt="sidebar">
+                                  Canva Fontes
+                                </button>
+
+
+                                <!-- DROPDOWN LIST LINK  -->
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <div class="drop">
+                                    <a class="btn shadow-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                      Conhecimento
+                                    </a>
+                                  </div>
+                                  <div class="collapse" id="collapseExample2">
+                                    <div class="card border-0 card-body p-0">
+                                        <ul class="m-0 p-0 list-unstyled">
+                                            <li class="my-3">
+                                                <a href="#" class="text-decoration-none nav-link p-0">
+                                                    <img src="images/icons/icon_m_4.png" alt="sidebar">
+                                                    Artes para Feed
+                                                </a>
+                                            </li>
+                                            <li class="my-3">
+                                                <a href="#" class="text-decoration-none nav-link p-0">
+                                                    <img src="images/icons/icon_m_4.png" alt="sidebar">
+                                                    Artes para Story
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_27.png" alt="sidebar">
+                                  Conheçendo o Club
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_25.png" alt="sidebar">
+                                  Curso Canva
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_26.png" alt="sidebar">
+                                  Dicas de Internet
+                                </button>
+
+                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                  <img src="images/icons/icon_m_26.png" alt="sidebar">
+                                  Editando Artes
+                                </button>
+                                
+                            </div>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+
+                        <div class="tab-content bg-white py-5 w-100" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active bg-white" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <div class="container-fluid blog__layout">
+                                  <div class="row align-items-center">
+                                    <div class="col">
+                                      <div class="d-flex align-items-center justify-content-between justify-content-md-start mb-3">
+                                        <h1 class="light__gray font__40 me-3 Cairo_Regular">
+                                          Artes para Feed
+                                        </h1>
+                                      </div>
+                                      <div class="d-flex">
+                                        <!-- DYNAMIC  -->
+                                        <p class="feed_info">
+                                          <span class="purple__text">
+                                            4.890 artes
+                                          </span>
+                                          <span class="light__gray ms-lg-5">
+                                            Última atualização:
+                                          </span>
+                                          <span class="purple__text">
+                                            09/04/2022 ás 18h:30
+                                          </span>
+                                        </p>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md px-0 d-flex menu__drop justify-content-end align-items-center">
+                                      <div class="me-4">
+                                        <button class="btn dropdown-toggle dropdown__btn__soft font__14 text-white " type="button" data-bs-toggle="dropdown" aria-expanded="false">Ordem</button>
+                                        <ul class="dropdown-menu dropdown__arrows w-auto px-3">
+                                          <li><a class="dropdown-item" href="#">Mais recentes</a></li>
+                                          <li><hr class="dropdown-divider mx-3 my-2"></li>
+                                          <li><a class="dropdown-item" href="#">Mais antigas</a></li>
+                                          <li><hr class="dropdown-divider mx-3 my-2"></li>
+                                          <li><a class="dropdown-item" href="#">Alfabética</a></li>
+                                        </ul>
+                                      </div>
+                                      <div class="me-4">
+                                        <button class="btn dropdown-toggle dropdown__btn__soft font__14 text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">Ordem</button>
+                                        <ul class="dropdown-menu dropdown__arrows w-auto px-3">
+                                          <li><a class="dropdown-item" href="#">Mais recentes</a></li>
+                                          <li><hr class="dropdown-divider mx-3 my-2"></li>
+                                          <li><a class="dropdown-item" href="#">Mais antigas</a></li>
+                                          <li><hr class="dropdown-divider mx-3 my-2"></li>
+                                          <li><a class="dropdown-item" href="#">Alfabética</a></li>
+                                        </ul>
+                                      </div>
+                                      <div class="me-sm-4">
+                                        <button class="btn dropdown-toggle dropdown__btn__soft font__14 text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">Ordem</button>
+                                        <ul class="dropdown-menu dropdown__arrows w-auto px-3">
+                                          <li><a class="dropdown-item" href="#">Mais recentes</a></li>
+                                          <li><hr class="dropdown-divider mx-3 my-2"></li>
+                                          <li><a class="dropdown-item" href="#">Mais antigas</a></li>
+                                          <li><hr class="dropdown-divider mx-3 my-2"></li>
+                                          <li><a class="dropdown-item" href="#">Alfabética</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                  <div class="row">
+                                    <div class="col px-md-4 mt-2 mb-md-5">
+                                      <hr>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col  overflow-hidden">
+                                      <div class="feed__layout d-flex flex-wrap">
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_10.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_14.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                        
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_3.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_13.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_4.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_12.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_5.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_11.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_6.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_10.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_7.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_9.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                        
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_8.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_8.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_9.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_7.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_1.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_6.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_10.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_5.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_11.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_4.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                        
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_13.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_3.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_14.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_2.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_11.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_1.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div class="feed__card card pb-3">
+                                          <div class="feed__banner">
+                                            <img class="w-100" src="images/templates/foto_16.png" alt="banner">
+                                          </div>
+                                          <div class="feed__img">
+                                            <img class="w-100" src="images/Feed/icon_1.png" alt="profile">
+                                          </div>
+                                          <div class="feed__info text-center">
+                                            <p class="font__16 my-2 Cairo_SemiBold soft__black">
+                                              Páscoa
+                                            </p>
+                                            <ul class="m-0 p-0 list-unstyled feed__icons d-flex justify-content-center my-3">
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_5.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_6.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_7.png" alt="icon">
+                                                </a>
+                                              </li>
+                                              <li>
+                                                <a href="#">
+                                                  <img class="w-100" src="images/icons/icon_m_8.png" alt="icon">
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        
+
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row align-items-center">
+                                    <div class="col">
+                                      <div class="d-flex align-items-center justify-content-between justify-content-md-start mb-3">
+                                        <h1 class="light__gray font__40 me-3 Cairo_Regular">
+                                          Seus Download's
+                                        </h1>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-lg-11">
+                                      <div class="post__short">
+                                        <div class="row">
+                                          <div class="col d-flex flex-column flex-md-row align-items-md-center">
+                                            <div class="post__short_img">
+                                              <img class="w-100" src="images/Feed/photo_1.png" alt="">
+                                            </div>
+                                            <div class="post__short_content">
+                                              <h6 class="font__22 Cairo_SemiBold light__gray mb-2 ms-md-4">
+                                                Texto 3D Para Composição Páscoa De Chocolate PSD Editável
+                                              </h6>
+                                              <div class="links d-flex align-items-center flex-wrap ms-md-4">
+                                                  <a href="#" class="text-decoration-none Cairo_SemiBold">
+                                                    <img class="link_icon me-3" src="images/select.png" alt="select">
+                                                  </a>
+                                                  <p class="mb-0 Cairo_SemiBold">
+                                                    <span> Licença :
+                                                    </span>
+                                                    <span class="soft__green mx-2">
+                                                      28087821016412
+                                                    </span>
+                                                    .
+                                                  </p>
+
+                                                  <a href="#" class="text-decoration-none mx-md-3 light__gray Cairo_SemiBold">
+                                                    <img class="link_icon" src="images/calendar.png" alt="select">
+                                                    <span class="ms-2">2022-04-09 19:44:55</span>
+                                                  </a>
+                                              </div>
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="post__short">
+                                        <div class="row">
+                                          <div class="col d-flex flex-column flex-md-row align-items-md-center">
+                                            <div class="post__short_img">
+                                              <img class="w-100" src="images/Feed/photo_2.png" alt="">
+                                            </div>
+                                            <div class="post__short_content">
+                                              <h6 class="font__22 Cairo_SemiBold light__gray mb-2 ms-md-4">
+                                                Texto 3D Para Composição Páscoa De Chocolate PSD Editável
+                                              </h6>
+                                              <div class="links d-flex align-items-center flex-wrap ms-md-4">
+                                                  <a href="#" class="text-decoration-none Cairo_SemiBold">
+                                                    <img class="link_icon me-3" src="images/select.png" alt="select">
+                                                  </a>
+                                                  <p class="mb-0 Cairo_SemiBold">
+                                                    <span> Licença :
+                                                    </span>
+                                                    <span class="soft__green mx-2">
+                                                      28087821016412
+                                                    </span>
+                                                    .
+                                                  </p>
+
+                                                  <a href="#" class="text-decoration-none mx-md-3 light__gray Cairo_SemiBold">
+                                                    <img class="link_icon" src="images/calendar.png" alt="select">
+                                                    <span class="ms-2">2022-04-09 19:44:55</span>
+                                                  </a>
+                                              </div>
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="post__short">
+                                        <div class="row">
+                                          <div class="col d-flex flex-column flex-md-row align-items-md-center">
+                                            <div class="post__short_img">
+                                              <img class="w-100" src="images/Feed/photo_3.png" alt="">
+                                            </div>
+                                            <div class="post__short_content">
+                                              <h6 class="font__22 Cairo_SemiBold light__gray mb-2 ms-md-4">
+                                                Texto 3D Para Composição Páscoa De Chocolate PSD Editável
+                                              </h6>
+                                              <div class="links d-flex align-items-center flex-wrap ms-md-4">
+                                                  <a href="#" class="text-decoration-none Cairo_SemiBold">
+                                                    <img class="link_icon me-3" src="images/select.png" alt="select">
+                                                  </a>
+                                                  <p class="mb-0 Cairo_SemiBold">
+                                                    <span> Licença :
+                                                    </span>
+                                                    <span class="soft__green mx-2">
+                                                      28087821016412
+                                                    </span>
+                                                    .
+                                                  </p>
+
+                                                  <a href="#" class="text-decoration-none mx-md-3 light__gray Cairo_SemiBold">
+                                                    <img class="link_icon" src="images/calendar.png" alt="select">
+                                                    <span class="ms-2">2022-04-09 19:44:55</span>
+                                                  </a>
+                                              </div>
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="post__short">
+                                        <div class="row">
+                                          <div class="col d-flex flex-column flex-md-row align-items-md-center">
+                                            <div class="post__short_img">
+                                              <img class="w-100" src="images/Feed/photo_4.png" alt="">
+                                            </div>
+                                            <div class="post__short_content">
+                                              <h6 class="font__22 Cairo_SemiBold light__gray mb-2 ms-md-4">
+                                                Texto 3D Para Composição Páscoa De Chocolate PSD Editável
+                                              </h6>
+                                              <div class="links d-flex align-items-center flex-wrap ms-md-4">
+                                                  <a href="#" class="text-decoration-none Cairo_SemiBold">
+                                                    <img class="link_icon me-3" src="images/select.png" alt="select">
+                                                  </a>
+                                                  <p class="mb-0 Cairo_SemiBold">
+                                                    <span> Licença :
+                                                    </span>
+                                                    <span class="soft__green mx-2">
+                                                      28087821016412
+                                                    </span>
+                                                    .
+                                                  </p>
+
+                                                  <a href="#" class="text-decoration-none mx-md-3 light__gray Cairo_SemiBold">
+                                                    <img class="link_icon" src="images/calendar.png" alt="select">
+                                                    <span class="ms-2">2022-04-09 19:44:55</span>
+                                                  </a>
+                                              </div>
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="post__short">
+                                        <div class="row">
+                                          <div class="col d-flex flex-column flex-md-row align-items-md-center">
+                                            <div class="post__short_img">
+                                              <img class="w-100" src="images/Feed/photo_5.png" alt="">
+                                            </div>
+                                            <div class="post__short_content">
+                                              <h6 class="font__22 Cairo_SemiBold light__gray mb-2 ms-md-4">
+                                                Texto 3D Para Composição Páscoa De Chocolate PSD Editável
+                                              </h6>
+                                              <div class="links d-flex align-items-center flex-wrap ms-md-4">
+                                                  <a href="#" class="text-decoration-none Cairo_SemiBold">
+                                                    <img class="link_icon me-3" src="images/select.png" alt="select">
+                                                  </a>
+                                                  <p class="mb-0 Cairo_SemiBold">
+                                                    <span> Licença :
+                                                    </span>
+                                                    <span class="soft__green mx-2">
+                                                      28087821016412
+                                                    </span>
+                                                    .
+                                                  </p>
+
+                                                  <a href="#" class="text-decoration-none mx-md-3 light__gray Cairo_SemiBold">
+                                                    <img class="link_icon" src="images/calendar.png" alt="select">
+                                                    <span class="ms-2">2022-04-09 19:44:55</span>
+                                                  </a>
+                                              </div>
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="post__short">
+                                        <div class="row">
+                                          <div class="col d-flex flex-column flex-md-row align-items-md-center">
+                                            <div class="post__short_img">
+                                              <img class="w-100" src="images/Feed/photo_6.png" alt="">
+                                            </div>
+                                            <div class="post__short_content">
+                                              <h6 class="font__22 Cairo_SemiBold light__gray mb-2 ms-md-4">
+                                                Texto 3D Para Composição Páscoa De Chocolate PSD Editável
+                                              </h6>
+                                              <div class="links d-flex align-items-center flex-wrap ms-md-4">
+                                                  <a href="#" class="text-decoration-none Cairo_SemiBold">
+                                                    <img class="link_icon me-3" src="images/select.png" alt="select">
+                                                  </a>
+                                                  <p class="mb-0 Cairo_SemiBold">
+                                                    <span> Licença :
+                                                    </span>
+                                                    <span class="soft__green mx-2">
+                                                      28087821016412
+                                                    </span>
+                                                    .
+                                                  </p>
+
+                                                  <a href="#" class="text-decoration-none mx-md-3 light__gray Cairo_SemiBold">
+                                                    <img class="link_icon" src="images/calendar.png" alt="select">
+                                                    <span class="ms-2">2022-04-09 19:44:55</span>
+                                                  </a>
+                                              </div>
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/index.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
