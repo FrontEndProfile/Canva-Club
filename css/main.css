@@ -240,6 +240,23 @@ header {
   header .profile__mobo_username {
     font-size: 100%; }
 
+.profie__switch .form-check-input {
+  width: 2.5rem;
+  padding: 8px 18px;
+  border: none;
+  background-color: #f4f4f4; }
+
+.dropdown__count {
+  background-color: #FEF3C7;
+  padding: 4px 8px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 0.4rem;
+  font-size: 12px;
+  color: #e1bf36;
+  font-family: Cairo_Bold; }
+
 .search__header .form-control {
   width: 18vw !important;
   font-size: 1.4rem; }
@@ -293,7 +310,8 @@ header {
 .hero {
   height: 70vh; }
   .hero__tittle {
-    font-family: Inter_Bold; }
+    font-family: Inter_Bold;
+    line-height: 1.1; }
   .hero__video {
     border-radius: 1rem;
     width: 100%;
@@ -301,13 +319,17 @@ header {
     background-color: #7245e5;
     background-image: url(../images/video.jpg);
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: cover;
     background-position: center;
     overflow: hidden; }
   .hero__player {
     width: 100%;
     height: 100%;
     background: #3f3f3f89; }
+  .hero__btn {
+    padding: 0.5rem 5rem !important;
+    font-size: 2rem;
+    border-width: 1.25px; }
 
 .video-play-button {
   position: absolute;
@@ -581,13 +603,13 @@ header {
   z-index: 2; }
 
 .carousel-inner .ratio {
-  background: #000000ba !important;
-  border-radius: 16px;
+  background: #00000054 !important;
+  border-radius: 6px;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7.7px);
   -webkit-backdrop-filter: blur(7.7px);
-  border: 1px solid rgba(99, 203, 252, 0.3); }
+          backdrop-filter: blur(7.7px);
+  border: 2px solid rgba(17, 22, 24, 0.731); }
 
 .lasty .see__more a {
   background-color: #7245e5;
@@ -607,7 +629,7 @@ header {
     text-align: start;
     background: transparent !important;
     font-size: 1.4rem;
-    margin-bottom: 2px; }
+    margin-bottom: 10px; }
     .layout__ .nav-pills .nav-link > img, header .nav-pills .nav-link > img {
       width: 3.7rem;
       margin-right: 4px; }
@@ -716,13 +738,14 @@ header {
   .dropdown-menu .dropdown-item {
     font-size: 1.6rem;
     font-family: Cairo_SemiBold;
-    padding: 0.3rem 2rem;
+    padding: 0.3rem 1rem;
     background-color: white;
     border-radius: 3px;
     color: #6f737c;
     -webkit-transition: 0.3s all;
     transition: 0.3s all;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 1rem; }
     .dropdown-menu .dropdown-item:hover {
       -webkit-transition: 0.3s all;
       transition: 0.3s all; }
@@ -819,7 +842,7 @@ header {
     outline: none;
     -webkit-box-shadow: none;
             box-shadow: none;
-    margin-bottom: 6rem; }
+    margin-bottom: 3rem; }
   .legenda .accordion-header {
     border: none !important;
     outline: none;
@@ -948,6 +971,20 @@ header {
     background-repeat: no-repeat !important;
     margin-left: 0 !important; }
 
+.menu__drop .dropdown__gray {
+  background-color: #6f737c !important;
+  width: 10rem !important; }
+  .menu__drop .dropdown__gray::after {
+    right: 12px !important; }
+
+.menu__drop .dropdown__w {
+  width: 10rem !important; }
+  .menu__drop .dropdown__w::after {
+    right: 12px !important; }
+
+header .user__pro .dropdown-menu li hr {
+  background-color: #b0b0b0 !important; }
+
 @media (max-width: 1600px) {
   .template__card .template__add {
     padding: 35% 1rem 1rem 1rem; }
@@ -1012,7 +1049,11 @@ header {
     font-size: 1.5rem; }
   .template__layout {
     -ms-grid-columns: (auto)[4];
-        grid-template-columns: repeat(4, auto); } }
+        grid-template-columns: repeat(4, auto); }
+  .hero__btn {
+    padding: 0.3rem 2.5rem !important;
+    font-size: 1.6rem;
+    border-width: 1.25px; } }
 
 @media (max-width: 991px) {
   .video-play-button::after {
@@ -1126,7 +1167,11 @@ header {
         grid-template-columns: repeat(2, auto); }
   .blog__page .template__layout {
     -ms-grid-columns: (auto)[2];
-        grid-template-columns: repeat(2, auto); } }
+        grid-template-columns: repeat(2, auto); }
+  .menu__drop .dropdown__gray {
+    width: 8.9rem !important; }
+  .menu__drop .dropdown__w {
+    width: 8.9rem !important; } }
 
 @media (max-width: 500px) {
   .hero__video {
